@@ -1,5 +1,7 @@
 import React from 'react';
 import { PropTypes } from 'prop-types';
+import { ImgAvatar, LiSection, NameSection, ProfileSection, QuaSection, SectionDescription, TegLand, UlSection } from './Profile.styled';
+
 
 export const Profile = ({
   username,
@@ -9,31 +11,35 @@ export const Profile = ({
   stats: { followers, views, likes },
 }) => {
   return (
-    <div class="profile">
-      <div class="description">
-        <img src={avatar} alt="User avatar" class="avatar" />
-        <p class="name">{username}</p>
-        <p class="tag">{tag}</p>
-        <p class="location">{location}</p>
-      </div>
+    <ProfileSection className="profile">
+      <SectionDescription className="description">
+        
+        <ImgAvatar src={avatar} alt="User avatar" className="avatar"  />
+        <NameSection className="name">{username}</NameSection>
+        <TegLand className="tag">{tag}</TegLand>
+        <TegLand className="location">{location}</TegLand>
+      </SectionDescription>
 
-      <ul class="stats">
-        <li>
-          <span class="label">Followers</span>
-          <span class="quantity">{followers}</span>
-        </li>
-        <li>
-          <span class="label">Views</span>
-          <span class="quantity">{views}</span>
-        </li>
-        <li>
+      <UlSection className="stats">
+        <LiSection>
+          <span className="label">Followers</span>
+          <QuaSection className="quantity">{followers}</QuaSection>
+        </LiSection>
+        <LiSection>
+          <span className="label">Views</span>
+          <QuaSection className="quantity">{views}</QuaSection>
+        </LiSection>
+        <LiSection>
           <span class="label">Likes</span>
-          <span class="quantity">{likes}</span>
-        </li>
-      </ul>
-    </div>
+          <QuaSection class="quantity">{likes}</QuaSection>
+        </LiSection>
+      </UlSection>
+    </ProfileSection>
   );
 };
+
+
+
 
 
 Profile.PropsTypes = {
@@ -42,8 +48,8 @@ Profile.PropsTypes = {
   location: PropTypes.string.isRequired,
   avatar: PropTypes.string.isRequired,
   stats: PropTypes.shape({
-      followers: PropTypes.string.isRequired,
-      views: PropTypes.number.isRequired,
-      likes: PropTypes.number.isRequired,
+    followers: PropTypes.string.isRequired,
+    views: PropTypes.number.isRequired,
+    likes: PropTypes.number.isRequired,
   }).isRequired,
-}
+};

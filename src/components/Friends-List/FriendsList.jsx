@@ -1,19 +1,19 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { FriendsItem } from 'components/Friends-Item/FriendsItem';
+import { StyleSection } from './FriendList.style';
 
 export const FriendsList = ({ friends }) => {
   return (
-    <div>
+    <StyleSection>
       {friends.map(({ avatar, name, isOnline, id }) => (
         <FriendsItem key={id} avatar={avatar} name={name} isOnline={isOnline} />
       ))}
-    </div>
+    </StyleSection>
   );
 };
 
-
-FriendsList.propTypes = { 
+FriendsList.propTypes = {
   avatar: PropTypes.string.isRequired,
   name: PropTypes.string.isRequired,
   isOnline: PropTypes.bool.isRequired,

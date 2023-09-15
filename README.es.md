@@ -5,7 +5,7 @@ Este proyecto fue creado con la ayuda de
 [Consulte la documentación](https://facebook.github.io/create-react-app/docs/getting-started)
 para familiarizarse con las funciones opcionales y configurarlas.
 
-## Crear un repositorio desde una plantilla
+## Crear un repositorio desde una plantilla1
 
 Usa este repositorio de la organización GoIT como plantilla para crear el repositorio de tu proyecto. 
 Para hacer esto, haz clic en `«Use this template»` y selecciona la opción

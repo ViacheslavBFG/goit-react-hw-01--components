@@ -1,8 +1,8 @@
 import React from 'react';
-import { Profile } from 'components/Profile/Profile';
-import { Statistics } from 'components/Statistics/Statistics';
-import { FriendsList } from 'components/Friends-List/FriendsList';
-import { TransactionHistory } from 'components/Transaction/TransactionHistory';
+import { Profile } from './Profile/Profile';
+import { Statistics } from './Statistics/Statistics';
+import { FriendsList } from './Friends-List/FriendsList';
+import { TransactionHistory } from './Transaction/TransactionHistory';
 
 
 

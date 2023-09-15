@@ -18,6 +18,7 @@ export const App = () => {
       <FriendsList friends={friends} />;
       <TransactionHistory items={transactions} />;
     </div>
+  
   );
 };
 

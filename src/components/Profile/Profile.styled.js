@@ -12,6 +12,8 @@ export const ProfileSection = styled.div`
   border-radius: 70px;
   margin-top: 20px;
   text-align: center;
+  box-shadow: 3px 3px 5px 2px rgba(0, 0, 0, 0.5);
+  border-color: white;
 `;
 
 export const SectionDescription = styled.div`
@@ -44,6 +46,7 @@ export const LiSection = styled.li`
   gap: 5px;
   flex-direction: column;
   text-align: center;
+  
 `;
 export const QuaSection = styled.span`
   font-weight: bold;

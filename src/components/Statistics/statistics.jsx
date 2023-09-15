@@ -1,9 +1,8 @@
-import React from 'react'
+import React from 'react';
 import PropTypes from 'prop-types';
 import { StatisticsSection, UlSection } from './Statistics.styled';
 
-
-export const Statistics  = ({ title, stats }) => {
+export const Statistics = ({ title, stats }) => {
   return (
     <StatisticsSection className="Statistics">
       {title && <h2 className="title">{title}</h2>}
@@ -19,9 +18,6 @@ export const Statistics  = ({ title, stats }) => {
   );
 };
 
-
-
-
 Statistics.propTypes = {
   title: PropTypes.string,
   stats: PropTypes.arrayOf(
@@ -31,24 +27,13 @@ Statistics.propTypes = {
       percentage: PropTypes.number.isRequired,
     })
   ).isRequired,
-}
-
-
-
-
-
-
-
-
-
-
-
+};
 
 // export const Statistics = ({id,label,percentage}) => {
 //   return (
 //     <div><section class="statistics">
 //     <h2 class="title">Upload stats</h2>
-  
+
 //     <ul class="stat-list">
 //       <li class="item">
 //         <span class="label">.docx</span>

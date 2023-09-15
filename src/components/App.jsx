@@ -1,7 +1,7 @@
 import React from 'react';
 
 import { Profile } from './Profile/Profile';
-import { Statistics } from './Statistics/Statistics';
+import { Statistics } from './Statistics/statistics';
 import { FriendsList } from './Friends-List/FriendsList';
 import { TransactionHistory } from './Transaction/TransactionHistory';
 

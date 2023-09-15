@@ -22,5 +22,7 @@ export const LiSection = styled.li`
     background-color: #f5f5f5;
     transform: scale(1.3);
     box-shadow: 5px 5px 10px 2px rgba(0, 0, 0, 0.5);
+    border-color:pink;
+    
   }
 `;

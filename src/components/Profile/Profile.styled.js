@@ -39,12 +39,13 @@ export const UlSection = styled.ul`
   display: flex;
   gap: 30px;
   transform: translateX(-20px);
-  li:hover{
-    color:red;
-    font-size: 1.2em;
-    transition: font-size 0.5s ease;
+  li:hover {
+    transform: rotate(360deg);
+    color: red;
+    font-size: 1.3em;
+    transition: font-size 0.5s ease-in;
+    
   }
-
 `;
 
 export const LiSection = styled.li`
@@ -52,7 +53,6 @@ export const LiSection = styled.li`
   gap: 5px;
   flex-direction: column;
   text-align: center;
-  
 `;
 export const QuaSection = styled.span`
   font-weight: bold;

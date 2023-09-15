@@ -12,10 +12,15 @@ export const LiSection = styled.li`
   display: flex;
   justify-content: center;
   align-items: center;
-  gap:10px;
-  margin-bottom:30px;
-  border:2px solid white;
+  gap: 10px;
+  margin-bottom: 30px;
+  border: 2px solid white;
   box-shadow: 3px 3px 5px 2px rgba(0, 0, 0, 0.5);
   border-radius: 70px;
-width:150px;
+  width: 150px;
+  &:hover {
+    background-color: #f5f5f5;
+    transform: scale(1.3);
+    box-shadow: 5px 5px 10px 2px rgba(0, 0, 0, 0.5);
+  }
 `;

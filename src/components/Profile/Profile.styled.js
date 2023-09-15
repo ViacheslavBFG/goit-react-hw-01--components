@@ -39,6 +39,12 @@ export const UlSection = styled.ul`
   display: flex;
   gap: 30px;
   transform: translateX(-20px);
+  li:hover{
+    color:red;
+    font-size: 1.2em;
+    transition: font-size 0.5s ease;
+  }
+
 `;
 
 export const LiSection = styled.li`
